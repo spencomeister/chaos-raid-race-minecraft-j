@@ -1,5 +1,5 @@
 plugins {
-    id("net.fabricmc.fabric-loom") version "1.16-SNAPSHOT"
+    id("net.fabricmc.fabric-loom") version "1.15.5"
 }
 
 version = project.property("mod_version") as String
@@ -34,6 +34,7 @@ java {
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
     options.release.set(25)
+    options.compilerArgs.add("-Xlint:deprecation")
 }
 
 tasks.jar {

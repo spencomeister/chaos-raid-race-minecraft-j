@@ -147,7 +147,7 @@ public class ChaosRaidRace implements DedicatedServerModInitializer {
                         if (!reflectionInProgress.contains(attacker.getUUID())) {
                             reflectionInProgress.add(attacker.getUUID());
                             try {
-                                attacker.hurt(entity.damageSources().thorns(entity), amount);
+                                attacker.hurtServer(attacker.level(), entity.damageSources().thorns(entity), amount);
                             } finally {
                                 reflectionInProgress.remove(attacker.getUUID());
                             }
