@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "chaos-raid-race",
+  "version": "${version}",
+  "name": "Chaos Raid Race",
+  "description": "カオス・レイド・レース - Minecraft サーバーサイド Fabric MOD",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "io.seragl.chaosraidrace.ChaosRaidRace"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": ">=26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
