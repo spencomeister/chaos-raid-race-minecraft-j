@@ -34,6 +34,7 @@ java {
 tasks.withType<JavaCompile> {
     options.encoding = "UTF-8"
     options.release.set(25)
+    options.compilerArgs.add("-Xlint:deprecation")
 }
 
 tasks.jar {
